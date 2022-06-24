@@ -1,4 +1,4 @@
-import app from '../index.js';
+import { app } from '../index.js';
 import {CreateTip} from "../models/create_model.js";
 import {bd} from "../infra/bd.js";
 
