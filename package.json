@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nahla Valentina",
   "license": "ISC",
   "dependencies": {
     "es6": "^0.0.7",

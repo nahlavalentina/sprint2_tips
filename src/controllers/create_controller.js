@@ -1,6 +1,6 @@
 import app from '../index.js';
 import {CreateTip} from "../models/create_model.js";
-import {SavedTips} from "../models/tips_model.js"
+import {bd} from "../infra/bd.js";
 
 export const create = (app) => {
 
@@ -11,8 +11,7 @@ export const create = (app) => {
 
     app.post("/create", (req, res) => {
         const create = new CreateTip(req.body.title, req.body.content)
-        const savedTips = new SavedTips(title, content)
-        savedTips.push(create)
+        bd.push(create)
         res.send({"Tip added" : req.body})
     })
 }
